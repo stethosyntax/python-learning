@@ -1,0 +1,203 @@
+
+================================================================================
+1. STRING LENGTH OPERATIONS
+================================================================================
+
+  Name: Laura
+  Built-in len(): 5
+  Custom length function: 5
+
+================================================================================
+2. SORTING OPERATIONS
+================================================================================
+
+2.1 Sorting Integer Lists
+--------------------------------------------------------------------------------
+  Original List: [1, 5, 6, 7, 4]
+  Sorted Ascending: [1, 4, 5, 6, 7]
+  Sorted Descending: [7, 6, 5, 4, 1]
+  Original List After sorted(): [1, 5, 6, 7, 4]
+  After arr.sort(): [1, 4, 5, 6, 7]
+  After arr.sort(reverse=True): [7, 6, 5, 4, 1]
+
+--------------------------------------------------------------------------------
+2.2 Sorting Using Absolute Values
+--------------------------------------------------------------------------------
+  Original List: [-1, 5, -6, 7, 4]
+  Ascending: [-6, -1, 4, 5, 7]
+  Descending: [7, 5, 4, -1, -6]
+  By Absolute Value: [-1, 4, 5, -6, 7]
+  By Absolute Value (Descending): [7, -6, 5, 4, -1]
+  Lambda Absolute Sort: [-1, 4, 5, -6, 7]
+  Lambda Absolute Sort (Descending): [7, -6, 5, 4, -1]
+
+--------------------------------------------------------------------------------
+2.3 Sorting Strings
+--------------------------------------------------------------------------------
+  Original List: ['apple', 'pineapple', 'kiwi']
+  Alphabetical Order: ['apple', 'kiwi', 'pineapple']
+  By Length: ['kiwi', 'apple', 'pineapple']
+  By Length (Descending): ['pineapple', 'apple', 'kiwi']
+
+================================================================================
+3. MINIMUM, MAXIMUM, AND SUM FUNCTIONS
+================================================================================
+
+3.1 Minimum and Maximum Values
+--------------------------------------------------------------------------------
+  List: [-15, 6, 8, 7]
+  Minimum Value: -15
+  Maximum Value: 8
+  Maximum by Absolute Value: -15
+
+--------------------------------------------------------------------------------
+3.2 Sum Operations
+--------------------------------------------------------------------------------
+  List: [15, 6, 8, 7]
+  Sum: 36
+  Sum with Start Value 10: 46
+  Sum with Keyword Start=10: 46
+
+--------------------------------------------------------------------------------
+3.3 Math Module Functions
+--------------------------------------------------------------------------------
+  List: [1, 2, 4]
+  math.fsum(): 7.0
+  math.prod(): 8
+  Length: 3
+
+================================================================================
+4. BOOLEAN AND COUNT OPERATIONS
+================================================================================
+
+4.1 all() and any()
+--------------------------------------------------------------------------------
+  Values: [True, False, True]
+  all(): False
+  any(): True
+
+--------------------------------------------------------------------------------
+4.2 count()
+--------------------------------------------------------------------------------
+  List: [1, 6, 1, 7]
+  Count of 1: 2
+  Count of 6: 1
+  Custom Count of 1: 2
+
+================================================================================
+5. ENUMERATE, REVERSED, AND RANGE FUNCTIONS
+================================================================================
+
+5.1 enumerate() FUNCTION
+--------------------------------------------------------------------------------
+  Original List: [5, 6, 1, 3]
+  Enumerated List (index-value pairs): [(0, 5), (1, 6), (2, 1), (3, 3)]
+
+  Iterating using enumerate:
+    Index: 0, Value: 5
+    Index: 1, Value: 6
+    Index: 2, Value: 1
+    Index: 3, Value: 3
+
+--------------------------------------------------------------------------------
+5.2 reversed() FUNCTION
+--------------------------------------------------------------------------------
+  Original List: [5, 6, 1, 3]
+  Reversed List: [3, 1, 6, 5]
+  Original List (unchanged): [5, 6, 1, 3]
+
+--------------------------------------------------------------------------------
+5.3 range() FUNCTION
+--------------------------------------------------------------------------------
+  range(5): [0, 1, 2, 3, 4]
+  range(1, 6): [1, 2, 3, 4, 5]
+  range(0, 10, 2): [0, 2, 4, 6, 8]
+
+================================================================================
+6. COLLECTIONS MODULE - DEQUE
+================================================================================
+
+  Initial Deque: deque([2, 3, 1])
+  After append(5): deque([2, 3, 1, 5])
+  After appendleft(7): deque([7, 2, 3, 1, 5])
+  After pop(): deque([7, 2, 3, 1])
+  After popleft(): deque([2, 3, 1])
+  After extend([10, 'Raj']): deque([2, 3, 1, 10, 'Raj'])
+  After extendleft([89, 'Laura']): deque(['Laura', 89, 2, 3, 1, 10, 'Raj'])
+  After rotate(7): deque(['Laura', 89, 2, 3, 1, 10, 'Raj'])
+  After rotate(2): deque([10, 'Raj', 'Laura', 89, 2, 3, 1])
+  Final Deque Length: 7
+
+================================================================================
+7. COLLECTIONS MODULE - COUNTER
+================================================================================
+
+  List: [1, 2, 2, 3, 2, 3, 3, 4]
+  Counter Object: Counter({2: 3, 3: 3, 1: 1, 4: 1})
+  Count of 4: 1
+  Most Common (2): [(2, 3), (3, 3)]
+  Most Common (1): [(2, 3)]
+
+  Elements expanded:
+[1, 2, 2, 2, 3, 3, 3, 4]
+
+  After update([7, 7, 3]): Counter({3: 4, 2: 3, 7: 2, 1: 1, 4: 1})
+  After subtract([3, 3]): Counter({2: 3, 3: 2, 7: 2, 1: 1, 4: 1})
+
+  Counter c1: Counter({3: 3, 2: 3, 1: 1, 4: 1})
+  Counter c2: Counter({3: 2, 1: 1, 4: 1, 5: 1})
+  Addition (c1 + c2): Counter({3: 5, 2: 3, 1: 2, 4: 2, 5: 1})
+  Subtraction (c1 - c2): Counter({2: 3, 3: 1})
+  Intersection (c1 & c2): Counter({3: 2, 1: 1, 4: 1})
+  Union (c1 | c2): Counter({3: 3, 2: 3, 1: 1, 4: 1, 5: 1})
+
+================================================================================
+8. COLLECTIONS MODULE - DEFAULTDICT
+================================================================================
+
+  Defaultdict(int): defaultdict(<class 'int'>, {})
+  Missing key 'key1': 0
+  After insertions: defaultdict(<class 'int'>, {'key1': 0, 1: 'Laura', 'smith': 'Raj', 'u': 99, 'list': [1, 2, 3]})
+  Access 'list': [1, 2, 3]
+
+  Defaultdict(set):
+  Missing key: set()
+  Laura initial value: [7, 8, 9]
+  After append: [7, 8, 9, 10]
+
+================================================================================
+9. COLLECTIONS MODULE - ORDEREDDICT
+================================================================================
+
+  Initial OrderedDict: OrderedDict({'a': 1, 'b': 2, 'c': 3})
+  Key 'e' exists: False
+  After adding 'e': OrderedDict({'a': 1, 'b': 2, 'c': 3, 'e': 5})
+  After move_to_end('b'): OrderedDict({'a': 1, 'c': 3, 'e': 5, 'b': 2})
+  After move_to_end('e', first): OrderedDict({'e': 5, 'a': 1, 'c': 3, 'b': 2})
+  After popitem(): OrderedDict({'e': 5, 'a': 1, 'c': 3})
+  After popitem(last=False): OrderedDict({'a': 1, 'c': 3})
+  pop('c'): 3
+  Final OrderedDict: OrderedDict({'a': 1})
+
+================================================================================
+10. NAMEDTUPLE
+================================================================================
+
+  Point: Point(first=7, second=9)
+  First Value: 7
+  NestedPoints: NestedPoints(first=2, second=Point(first=7, second=9))
+  Inner Point: Point(first=7, second=9)
+  Inner Value: 9
+
+================================================================================
+11. CUSTOM CLASS
+================================================================================
+
+  Pair Object: (2, 9)
+  After update: (10, 9)
+  Second Pair: (21, 89)
+
+================================================================================
+END OF LIBRARIES I MODULE
+================================================================================
+

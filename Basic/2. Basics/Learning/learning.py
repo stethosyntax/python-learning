@@ -349,7 +349,7 @@ for i in range(3):
         print(f"  → Breaking the loop at iteration {i}")
         break
 else:
-    print(f"  → Loop completed without break")
+    print(f"  → Loop completed with break")
 
 # For Loop with List
 print("\n" + "-"*80)

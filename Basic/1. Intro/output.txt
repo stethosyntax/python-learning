@@ -1,15 +1,1 @@
 Hello, World!
-my name is Aruna
-I am learning Python
-5
-2 + 3 = 5
-My name is Raj
-Raj is 25 years old
-Raj lives in Mumbai
-Hello Raj
-Hello Hello Hello 
-3
-Line 1
-Line 2
-Name:	Raj
-He said "Hello"
